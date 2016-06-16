@@ -4,7 +4,7 @@ const formElm = document.getElementById('form-wordhex');
 const inputElm = document.getElementById('input-word');
 const resultElm = document.getElementById('result');
 
-function go(word) {
+function go(word, track = true) {
 	const result = getAllColors(word);
 
 	if (typeof result === 'string') {
@@ -29,6 +29,10 @@ function go(word) {
 			resultElm.appendChild(div);
 		}
 	}
+
+	if (track && window.ga) {
+		window.ga('send', 'event', 'search', 'search', word.toLowerCase());
+	}
 }
 
 formElm.addEventListener('submit', e => {
@@ -36,4 +40,4 @@ formElm.addEventListener('submit', e => {
 	go(inputElm.value);
 });
 
-go('beef');
+go('beef', false);
