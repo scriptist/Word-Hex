@@ -1,7 +1,7 @@
-@import "settings";
 @import "mixins";
 @import "typography";
-@import "components";
+@import "form";
+@import "result";
 
 *, *::before, *::after {
 	box-sizing: inherit;
@@ -14,4 +14,5 @@
 
 body {
 	margin: 0;
+	text-align: center;
 }

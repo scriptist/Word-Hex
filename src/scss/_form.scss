@@ -1,0 +1,28 @@
+.form {
+	margin-top: 40px;
+
+	input,
+	button {
+		font-size: 2em;
+		height: 52px;
+		padding: 0.2em 0.4em;
+	}
+
+	input {
+		width: 6em;
+	}
+
+	button {
+		background-color: #00beef;
+		border: 1px solid darken(#00beef, 10%);
+		color: darken(#00beef, 30%);
+		cursor: pointer;
+
+		transition: background-color 200ms, color 200ms;
+
+		&:hover {
+			background-color: darken(#00beef, 10%);
+			color: white;
+		}
+	}
+}

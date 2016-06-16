@@ -1,0 +1,51 @@
+.result {
+	margin: 40px 0;
+
+	.result__title {
+		margin-top: 80px;
+
+		.result__title__word {
+			background-color: #eee;
+			border: 1px solid #ccc;
+			display: inline-block;
+			font-family: monospace;
+			font-size: 1.2em;
+			padding: 0.2em 0.3em;
+			border-radius: 3px;
+			text-transform: lowercase;
+		}
+	}
+
+	.result__error {
+		background-color: #fab;
+		border: 1px solid;
+		color: #a00;
+		display: inline-block;
+		max-width: 365px;
+		padding: 20px;
+	}
+
+	.result__item {
+		$size: 80px;
+
+		color: #333;
+		text-shadow: 0 0 6px rgba(white, 0.5);
+		font-size: 14px;
+		display: inline-block;
+		height: $size;
+		line-height: $size;
+		margin: 10px;
+		text-align: center;
+		width: $size;
+
+		&.result__item--small {
+			$size: 60px;
+
+			font-size: 12px;
+			height: $size;
+			line-height: $size;
+			margin: 10px;
+			width: $size;
+		}
+	}
+}
